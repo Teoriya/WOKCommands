@@ -71,6 +71,7 @@ export default class CommandHandler {
         content = content.substring(prefix.length)
 
         const args = content.split(/[ ]+/)
+        console.log("wah",args)
 
         // Remove the "command", leaving just the arguments
         const firstElement = args.shift()
