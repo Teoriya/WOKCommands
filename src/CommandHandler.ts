@@ -70,7 +70,7 @@ export default class CommandHandler {
         // Remove the prefix
         content = content.substring(prefix.length)
 
-        const args = content.split(/ /g)
+        const args = content.split(/[ ]+/)
 
         // Remove the "command", leaving just the arguments
         const firstElement = args.shift()
